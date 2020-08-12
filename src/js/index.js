@@ -6,7 +6,7 @@
     var seed = null;
     var bip32RootKey = null;
     var bip32ExtendedKey = null;
-    var network = libs.bitcoin.networks.bitcoin;
+    var network = libs.bitcoin.networks.scribe;
     var addressRowTemplate = $("#address-row-template");
 
     var showIndex = true;
@@ -1462,7 +1462,7 @@
             var option = $("<option>");
             option.attr("value", i);
             option.text(network.name);
-            if (network.name == "BTC - Bitcoin") {
+            if (network.name == "SCRIBE - Scribe") {
                 option.prop("selected", true);
             }
             DOM.phraseNetwork.append(option);
